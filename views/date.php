@@ -40,7 +40,13 @@ $this->lang->load('date');
 // Form handler
 ///////////////////////////////////////////////////////////////////////////////
 
-if ($form_type === 'edit') {
+if ($form_type === 'wizard') {
+    $read_only = FALSE;
+    $buttons = array( 
+        form_submit_update('submit'),
+        anchor_javascript('sync', lang('date_synchronize_now'), 'high')
+    );
+} else if ($form_type === 'edit') {
     $read_only = FALSE;
     $buttons = array( 
         form_submit_update('submit'),
@@ -55,19 +61,11 @@ if ($form_type === 'edit') {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-// Infobox 
-///////////////////////////////////////////////////////////////////////////////
-
-echo "<div id='result_box'>";
-echo infobox_highlight(lang('base_status'), lang('date_synchronization_changed_time_by_x_seconds:') . ' ' .  "<span id='result'></span>");
-echo "</div>";
-
-///////////////////////////////////////////////////////////////////////////////
 // Form
 ///////////////////////////////////////////////////////////////////////////////
 
 echo form_open('date');
-echo form_header(lang('base_settings'));
+echo form_header(lang('base_settings'), array('id' => 'synchronize'));
 
 echo field_input('date', $date, lang('date_date'), TRUE);
 echo field_input('time', $time, lang('date_time'), TRUE);

@@ -110,7 +110,7 @@ class Date extends ClearOS_Controller
                 $this->time->set_time_zone($this->input->post('time_zone'));
 
                 $this->page->set_status_updated();
-                $this->page->redirect('/date');
+                redirect('/date');
             } catch (Exception $e) {
                 $this->page->view_exception($e);
                 return;

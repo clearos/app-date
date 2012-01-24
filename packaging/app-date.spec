@@ -39,6 +39,7 @@ cp -r * %{buildroot}/usr/clearos/apps/date/
 
 install -D -m 0644 packaging/app-date.cron %{buildroot}/etc/cron.d/app-date
 install -D -m 0644 packaging/date.conf %{buildroot}/etc/clearos/date.conf
+install -D -m 0644 packaging/filewatch-date-network.conf %{buildroot}/etc/clearsync.d/filewatch-date-network.conf
 install -D -m 0755 packaging/timesync %{buildroot}/usr/sbin/timesync
 
 %post
@@ -84,4 +85,5 @@ exit 0
 /usr/clearos/apps/date/libraries
 /etc/cron.d/app-date
 %config(noreplace) /etc/clearos/date.conf
+/etc/clearsync.d/filewatch-date-network.conf
 /usr/sbin/timesync

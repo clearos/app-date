@@ -55,13 +55,13 @@ $(document).ready(function() {
     //-------------
 
     lang_synchronizing = '<?php echo lang("date_synchronizing"); ?>';
-    lang_changed = '<?php echo lang("date_synchronization_time_difference_in_seconds:"); ?>';
+    lang_synchronized = '<?php echo lang("date_synchronized"); ?>';
 
     // Main
     //-----
 
 	$("#sync").click(function(){
-		$("#status_synchronize").html('<div class="theme-form-status-working">' + lang_synchronizing + '</div>');
+		$("#status_synchronize").html('<div class="theme-form-header-working">' + lang_synchronizing + '</div>');
 
 		$.ajax({
 			url: '/app/date/sync',
@@ -81,7 +81,7 @@ function showData(payload) {
     if (payload.error_message) {
         // $("#result").html(payload.error_message);
     } else {
-        $("#status_synchronize").html(lang_changed + ' ' + payload.diff);
+        $("#status_synchronize").html(lang_synchronized);
     }
 }
 

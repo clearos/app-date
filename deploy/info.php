@@ -13,6 +13,10 @@ $app['license'] = 'GPLv3';
 $app['license_core'] = 'LGPLv3';
 $app['description'] = lang('date_app_description');
 $app['tooltip'] = lang('date_app_tooltip');
+$app['inline_help'] = array(
+    lang('date_time_zone') => lang('date_time_zone_help'),
+    lang('date_synchronize') => lang('date_synchronize_help'),
+);
 
 /////////////////////////////////////////////////////////////////////////////
 // App name and categories

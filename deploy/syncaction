@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# TODO: This seems to hang clearsync
+exit 0
+
+/usr/sbin/ntpdate -s -u time.clearsdn.com

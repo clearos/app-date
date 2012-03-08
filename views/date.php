@@ -64,7 +64,7 @@ if ($form_type === 'wizard') {
 // Form
 ///////////////////////////////////////////////////////////////////////////////
 
-echo form_open('date');
+echo form_open('date/edit');
 echo form_header(lang('base_settings'), array('id' => 'synchronize'));
 
 echo field_input('date', $date, lang('date_date'), TRUE);

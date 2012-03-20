@@ -105,12 +105,16 @@ class Date extends ClearOS_Controller
         // Handle form submit
         //-------------------
 
-        if (($this->input->post('submit') && $form_ok)) {
+        if (($this->input->post('time_zone') && $form_ok)) {
             try {
                 $this->time->set_time_zone($this->input->post('time_zone'));
 
                 $this->page->set_status_updated();
-                redirect('/date');
+
+                if ($this->session->userdata['wizard_redirect'])
+                    redirect($this->session->userdata['wizard_redirect']);
+                else
+                    redirect('/date');
             } catch (Exception $e) {
                 $this->page->view_exception($e);
                 return;

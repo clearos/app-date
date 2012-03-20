@@ -43,13 +43,12 @@ $this->lang->load('date');
 if ($form_type === 'wizard') {
     $read_only = FALSE;
     $buttons = array( 
-        form_submit_update('submit'),
         anchor_javascript('sync', lang('date_synchronize_now'), 'high')
     );
 } else if ($form_type === 'edit') {
     $read_only = FALSE;
     $buttons = array( 
-        form_submit_update('submit'),
+        form_submit_update('submit-form'),
         anchor_cancel('/app/date')
     );
 } else {
@@ -64,7 +63,7 @@ if ($form_type === 'wizard') {
 // Form
 ///////////////////////////////////////////////////////////////////////////////
 
-echo form_open('date/edit');
+echo form_open('date/edit', array('id' => 'date_form'));
 echo form_header(lang('base_settings'), array('id' => 'synchronize'));
 
 echo field_input('date', $date, lang('date_date'), TRUE);

@@ -13,10 +13,6 @@ $app['license'] = 'GPLv3';
 $app['license_core'] = 'LGPLv3';
 $app['description'] = lang('date_app_description');
 $app['tooltip'] = lang('date_app_tooltip');
-$app['inline_help'] = array(
-    lang('date_time_zone') => lang('date_time_zone_help'),
-    lang('date_synchronize') => lang('date_synchronize_help'),
-);
 
 /////////////////////////////////////////////////////////////////////////////
 // App name and categories
@@ -25,6 +21,13 @@ $app['inline_help'] = array(
 $app['name'] = lang('date_app_name');
 $app['category'] = lang('base_category_system');
 $app['subcategory'] = lang('base_subcategory_settings');
+
+// Wizard extras
+$app['controllers']['date']['wizard_name'] = lang('date_app_name');
+$app['controllers']['date']['wizard_description'] = lang('date_time_zone_wizard_help');
+$app['controllers']['date']['inline_help'] = array(
+    lang('date_synchronize') => lang('date_synchronize_help'),
+);
 
 /////////////////////////////////////////////////////////////////////////////
 // Packaging

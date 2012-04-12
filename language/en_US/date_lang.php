@@ -14,5 +14,5 @@ $lang['date_time_server_is_invalid'] = 'Time server is invalid.';
 $lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
 $lang['date_time_zone'] = 'Time Zone';
 $lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_help'] = 'Many apps and services require correct time zone information, so it is important that it is set correctly!';
+$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
 $lang['date_synchronize_help'] = 'Click on the synchronize button to update the system clock with the correct time.  Your system will automatically synchronize its clock from time to time.';

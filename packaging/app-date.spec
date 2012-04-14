@@ -1,7 +1,7 @@
 
 Name: app-date
 Epoch: 1
-Version: 1.0.10
+Version: 1.1.0
 Release: 1%{dist}
 Summary: Date and Time
 License: GPLv3
@@ -15,7 +15,7 @@ Requires: app-base
 The time zone and clock synchronization tool.
 
 %package core
-Summary: Date and Time - APIs and install
+Summary: Date and Time - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core

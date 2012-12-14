@@ -1,19 +1,86 @@
-#!/bin/sh
+#!/usr/clearos/sandbox/usr/bin/php
+<?php
 
-# Just a simple wrapper to run ntpdate and hwclock
+/**
+ * Automatic time synchronization script.
+ *
+ * @category   Apps
+ * @package    Date
+ * @subpackage Scripts
+ * @author     ClearFoundation <developer@clearfoundation.com>
+ * @copyright  2012 ClearFoundation
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
+ * @link       http://www.clearfoundation.com/docs/developer/apps/date/
+ */
 
-SERVER=`grep ^ntp_server /etc/clearos/date.conf 2>/dev/null | sed 's/.*=[[:space:]]*//'`
-if [ -z "$SERVER" ]; then
-	SERVER="time-a.nist.gov"
-fi
+///////////////////////////////////////////////////////////////////////////////
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+///////////////////////////////////////////////////////////////////////////////
 
-logger -p local6.notice -t ntpdate "Synchronizing time with $SERVER"
-RESULT=`/usr/sbin/ntpdate -s -u $SERVER 2>&1`
-RETVAL=$?
+///////////////////////////////////////////////////////////////////////////////
+// B O O T S T R A P
+///////////////////////////////////////////////////////////////////////////////
 
-if [ $RETVAL == 0 ]; then
-	logger -p local6.notice -t ntpdate "Setting hardware clock"
-	/sbin/hwclock --directisa --systohc >/dev/null 2>&1
-else
-	logger -p local6.notice -t ntpdate "Failed to synchronize: $RESULT"
-fi
+$bootstrap = getenv('CLEAROS_BOOTSTRAP') ? getenv('CLEAROS_BOOTSTRAP') : '/usr/clearos/framework/shared';
+require_once $bootstrap . '/bootstrap.php';
+
+///////////////////////////////////////////////////////////////////////////////
+// D E P E N D E N C I E S
+///////////////////////////////////////////////////////////////////////////////
+
+// Classes
+//--------
+
+use \clearos\apps\date\NTP_Time as NTP_Time;
+
+clearos_load_library('date/NTP_Time');
+
+// Exceptions
+//-----------
+
+use \Exception as Exception;
+
+///////////////////////////////////////////////////////////////////////////////
+// M A I N
+///////////////////////////////////////////////////////////////////////////////
+
+$ntp_time = new NTP_Time();
+
+$ntp_server_running = FALSE;
+$ntp_server_installed = FALSE;
+
+if (clearos_library_installed('ntp/NTP')) {
+    clearos_load_library('ntp/NTP');
+
+    $ntp = new \clearos\apps\ntp\NTP();
+    $ntp_server_running = $ntp->get_running_state();
+    $ntp_server_installed = TRUE;
+}
+
+if ($ntp_server_running) {
+    clearos_log('timesync', 'synchronizing skipped with NTP server running');
+} else if ($ntp_server_installed) {
+    clearos_log('timesync', 'synchronizing with ntpq');
+    $ntp->synchronize();
+} else {
+    clearos_log('timesync', 'synchronizing with ntpdate');
+    $ntp_time->synchronize();
+}
+
+clearos_log('timesync', 'synchronizing hardware clock');
+$ntp_time->synchronize_hardware_clock();
+
+// vim: syntax=php ts=4

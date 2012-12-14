@@ -111,6 +111,7 @@ class NTP_Time extends Engine
     const DEFAULT_CRONTAB_TIME = '2 2 * * *';
     const COMMAND_NTPDATE = '/usr/sbin/ntpdate';
     const COMMAND_CRON = '/usr/sbin/timesync';
+    const COMMAND_HWCLOCK = '/sbin/hwclock';
 
     ///////////////////////////////////////////////////////////////////////////////
     // M E T H O D S
@@ -210,7 +211,7 @@ class NTP_Time extends Engine
     /**
      * Sets automatic time synchronization schedule.
      *
-     * Sets state for automatic time synchronization.
+     * @param boolean $state state
      *
      * @return void
      * @throws Engine_Exception, Validation_Exception
@@ -291,6 +292,21 @@ class NTP_Time extends Engine
         $output = preg_replace('/\s*sec/', '', $output);
 
         return trim($output);
+    }
+
+    /**
+     * Synchronizes the hardware clock.
+     *
+     * @return void
+     * @throws Engine_Exception
+     */
+
+    public function synchronize_hardware_clock()
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        $shell = new Shell();
+        $shell->execute(self::COMMAND_HWCLOCK, '--directisa --systohc', TRUE);
     }
 
     ///////////////////////////////////////////////////////////////////////////////

@@ -126,23 +126,6 @@ class NTP_Time extends Engine
     }
 
     /**
-     * Disables automatic time synchronization schedule.
-     *
-     * @return void
-     * @throws Engine_Exception
-     */
-
-    public function disable_schedule()
-    {
-        clearos_profile(__METHOD__, __LINE__);
-
-        $cron = new Cron();
-
-        if ($cron->exists_configlet(self::FILE_CROND))
-            $cron->delete_configlet(self::FILE_CROND);
-    }
-
-    /**
      * Returns the time server used for synchronization.
      *
      * This will return the default self::DEFAULT_SERVER if a 
@@ -176,13 +159,13 @@ class NTP_Time extends Engine
     }
 
     /**
-     * Returns the schedule status for time synchronization.
+     * Returns state for automatic time synchronization.
      *
      * @return boolean TRUE if system is scheduled to synchronize
      * @throws Engine_Exception
      */
 
-    public function get_schedule_status()
+    public function get_schedule_state()
     {
         clearos_profile(__METHOD__, __LINE__);
 
@@ -227,23 +210,25 @@ class NTP_Time extends Engine
     /**
      * Sets automatic time synchronization schedule.
      *
-     * When this feature is set, time will by synchronized via NTP
-     * on a regular basis.
+     * Sets state for automatic time synchronization.
      *
      * @return void
      * @throws Engine_Exception, Validation_Exception
      */
 
-    public function set_schedule()
+    public function set_schedule_state($state)
     {
         clearos_profile(__METHOD__, __LINE__);
-
-        $payload = self::DEFAULT_CRONTAB_TIME . ' root ' . self::COMMAND_CRON;
 
         $cron = new Cron();
 
         if ($cron->exists_configlet(self::FILE_CROND))
             $cron->delete_configlet(self::FILE_CROND);
+
+        if (!$state)
+            return;
+
+        $payload = self::DEFAULT_CRONTAB_TIME . ' root ' . self::COMMAND_CRON;
 
         $cron->add_configlet(self::FILE_CROND, $payload);
     }
@@ -311,6 +296,22 @@ class NTP_Time extends Engine
     ///////////////////////////////////////////////////////////////////////////////
     // V A L I D A T I O N   R O U T I N E S
     ///////////////////////////////////////////////////////////////////////////////
+
+    /**
+     * Validation routine for state.
+     *
+     * @param boolean $state state
+     *
+     * @return string error message if state is invalid
+     */
+
+    public function validate_state($state)
+    {
+        clearos_profile(__METHOD__, __LINE__);
+
+        if (! clearos_is_valid_boolean($state))
+            return lang('base_parameter_invalid');
+    }
 
     /**
      * Validation routine for time server.

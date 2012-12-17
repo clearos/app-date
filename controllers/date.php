@@ -94,12 +94,14 @@ class Date extends ClearOS_Controller
         //------------------
 
         $this->load->library('date/Time');
+        $this->load->library('date/NTP_Time');
         $this->lang->load('date');
 
         // Set validation rules
         //---------------------
          
         $this->form_validation->set_policy('time_zone', 'date/Time', 'validate_time_zone', TRUE);
+        $this->form_validation->set_policy('auto_synchronize', 'date/NTP_Time', 'validate_state', TRUE);
         $form_ok = $this->form_validation->run();
 
         // Handle form submit
@@ -108,6 +110,7 @@ class Date extends ClearOS_Controller
         if (($this->input->post('time_zone') && $form_ok)) {
             try {
                 $this->time->set_time_zone($this->input->post('time_zone'));
+                $this->ntp_time->set_schedule_state($this->input->post('auto_synchronize'));
 
                 $this->page->set_status_updated();
 
@@ -133,6 +136,7 @@ class Date extends ClearOS_Controller
 
             $data['time_zone'] = $this->time->get_time_zone();
             $data['time_zones'] = $this->time->get_time_zone_list();
+            $data['auto_synchronize'] = $this->ntp_time->get_schedule_state();
 
             $timestamp = $this->time->get_time();
             $data['date'] = strftime("%b %e %Y", $timestamp);

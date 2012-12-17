@@ -62,6 +62,20 @@ $ntp_time = new NTP_Time();
 $ntp_server_running = FALSE;
 $ntp_server_installed = FALSE;
 
+// Bail if auto sync is disabled
+//------------------------------
+
+$auto_synchronize = $ntp_time->get_schedule_state();
+
+if (! $auto_synchronize) {
+    clearos_log('timesync', 'synchronizing time skipped (disabled)');
+    exit(0);
+}
+
+
+// Use ntpq if appropriate
+//------------------------
+
 if (clearos_library_installed('ntp/NTP')) {
     clearos_load_library('ntp/NTP');
 
@@ -71,7 +85,7 @@ if (clearos_library_installed('ntp/NTP')) {
 }
 
 if ($ntp_server_running) {
-    clearos_log('timesync', 'synchronizing skipped with NTP server running');
+    clearos_log('timesync', 'synchronizing skipped (NTP server running)');
 } else if ($ntp_server_installed) {
     clearos_log('timesync', 'synchronizing with ntpq');
     $ntp->synchronize();

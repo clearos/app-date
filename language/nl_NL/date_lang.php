@@ -5,6 +5,7 @@
 $lang['date_app_description'] = 'De tijdzone en de klok synchronisatie gereedschap.';
 $lang['date_app_name'] = 'Datum en tijd';
 $lang['date_app_tooltip'] = 'VoIP, authenticatie services en andere toepassingen vereisen de juiste tijd instellingen, dus zorg ervoor dat uw klok en tijdzone correct zijn!';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'Datum';
 $lang['date_synchronize'] = 'Synchronize';
 $lang['date_synchronize_help'] = 'Click on the synchronize button to update the system clock with the correct time.  Your system will automatically synchronize its clock from time to time.';

@@ -5,6 +5,7 @@
 $lang['date_app_description'] = 'Tidszon och synkronisering av klockan.';
 $lang['date_app_name'] = 'Datum och tid';
 $lang['date_app_tooltip'] = 'VOIP, autentisieringstjänster och andra applikationer kräver noggranna tidsangivelser, var därför noggrann med att din klocka och tidszon är korrekta!';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'Datum';
 $lang['date_synchronize'] = 'Synkronisera';
 $lang['date_synchronize_help'] = 'Klicka på synkroniseringsknappen för att uppdatera systemklockan med korrekt tid.   Ditt system kommer automatiskt att synkronisera klockan med jämna mellanrum.';

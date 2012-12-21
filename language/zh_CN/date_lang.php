@@ -5,6 +5,7 @@
 $lang['date_app_description'] = '时区和时钟同步工具';
 $lang['date_app_name'] = '日期和时间';
 $lang['date_app_tooltip'] = 'VoIP，验证服务和其他应用需要正确的时间设置，请确保时区和时间正确。';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = '日期';
 $lang['date_synchronize'] = 'Synchronize';
 $lang['date_synchronize_help'] = 'Click on the synchronize button to update the system clock with the correct time.  Your system will automatically synchronize its clock from time to time.';

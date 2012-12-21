@@ -5,6 +5,7 @@
 $lang['date_app_description'] = 'အခ်ိန္ဇံုနွင္႔ နာရီခ်ိန္ကိုက္မွဳကိရိယာတန္ဆာ';
 $lang['date_app_name'] = 'ေန႔ရက္ႏွင္႔ အခ်ိန္';
 $lang['date_app_tooltip'] = 'VoIP, authentication services ႏွင္႔ အျခားေသာ applications တို႔သည္ သင္႔ေတာ္ေသာ အခ်ိန္ကိုက္ညွိမွဳလိုအပ္ေသာေၾကာင္႔ နာရီနွင္႔ အခ်ိန္ဇံုမ်ားကို ေသခ်ာမွန္ကန္မွုရွိေအာင္ျပဳလုပ္ပါ။';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'ေန႔ရက္';
 $lang['date_synchronize'] = 'ခ်ိန္ကိုက္';
 $lang['date_synchronize_help'] = 'နာရီစနစ္ကို မွန္ကန္ေသာအခ်ိန္ျဖင္႔ ျပဳျပင္ရန္ ခ်ိန္ကိုက္ခလုပ္ (synchronize) ကို ႏွိပ္ပါ။ သင္႔ကြန္ပ်ဴတာစနစ္သည္ နာရီစနစ္အား အခ်ိန္နွင္႔တေျပးညီ အလိုအေလ်ာက္ ခ်ိန္ကိုက္သြားမည္ျဖစ္သည္။';

@@ -5,6 +5,7 @@
 $lang['date_app_description'] = 'Das Zeitzonen und Zeitsynchronisierungstool.';
 $lang['date_app_name'] = 'Tag und Uhrzeit';
 $lang['date_app_tooltip'] = 'VoIP, Anmeldedienste und weitere Anwendungen benötigen eine korrekte Zeiteinstellung. Stellen Sie daher sicher, dass die Zeit und Zeitzone korrekt ist!';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'Date';
 $lang['date_synchronize'] = 'Synchronisieren';
 $lang['date_synchronize_help'] = 'Klicken Sie auf den Synchronisieren Button um Ihr System mit der korrekten Uhrzeit zu synchronisieren.  Ihr System wird von Zeit zu Zeit die Uhrzeit automatisch aktualisieren.';

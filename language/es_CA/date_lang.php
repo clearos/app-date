@@ -5,6 +5,7 @@
 $lang['date_app_description'] = 'Eina de zona horaria i sincronització del rellotge.';
 $lang['date_app_name'] = 'Date and Time';
 $lang['date_app_tooltip'] = 'VoIP, serveis d\'autenticació i altres aplicacions requereixen una configuració adequada del temps, així que si us plau assegureu-vos que el rellotge i la zona horaria són correctes.';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'Data';
 $lang['date_synchronize'] = 'Synchronize';
 $lang['date_synchronize_help'] = 'Click on the synchronize button to update the system clock with the correct time.  Your system will automatically synchronize its clock from time to time.';

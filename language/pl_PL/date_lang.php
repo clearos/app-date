@@ -5,7 +5,7 @@
 $lang['date_app_description'] = 'Narzędzie do zmiany strefy czasowej i synchronizacji czasu.';
 $lang['date_app_name'] = 'Date and Time';
 $lang['date_app_tooltip'] = 'VoIP, usługi uwierzytelniania oraz inne aplikacje wymagają poprawnego ustawienia czasu, więc prosimy upewnić się, że zegar i strefa czasowa są prawidłowe!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
+$lang['date_automatic_synchronize'] = 'Synchronizacja automatyczna';
 $lang['date_date'] = 'Data';
 $lang['date_synchronize'] = 'Synchronizuj';
 $lang['date_synchronize_help'] = 'Kliknij na przycisk synchronizacji aby uaktualnić zegar systemowy na prawidłowy czas.  Twój system będzie automatycznie aktualizował zegar systemowy od czasu do czasu.';

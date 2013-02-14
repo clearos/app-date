@@ -1,3 +1,9 @@
 #!/bin/sh
 
-exit 0
+# Remove cronjob
+#---------------
+
+if [ -e /etc/cron.d/app-date ]; then
+    logger -p local6.notice -t installer "app-date-core - removing synchronization task"
+    rm -f /etc/cron.d/app-date
+fi

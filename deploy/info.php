@@ -41,9 +41,6 @@ $app['core_requires'] = array(
 
 $app['core_file_manifest'] = array( 
     'filewatch-date-network.conf'=> array('target' => '/etc/clearsync.d/filewatch-date-network.conf'),
-    'app-date.cron' => array(
-        'target' => '/etc/cron.d/app-date',
-    ),
     'date.conf' => array(
         'target' => '/etc/clearos/date.conf',
         'config' => TRUE,

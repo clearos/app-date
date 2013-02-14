@@ -12,6 +12,14 @@ sed -i -e 's/SYNC_HWCLOCK=.*/SYNC_HWCLOCK=yes/' /etc/sysconfig/ntpdate
 logger -p local6.notice -t installer "app-date-core - configurating time synchronization servers"
 install -m 0644 /usr/clearos/apps/date/deploy/step-tickers /etc/ntp/
 
+# Add cronjob by default
+#-----------------------
+
+if [ ! -e /etc/cron.d/app-date ]; then
+    logger -p local6.notice -t installer "app-date-core - adding synchronization task"
+    cp /usr/clearos/apps/date/deploy/app-date.cron /etc/cron.d/app-date
+fi
+
 # Reload clearsyncd
 #------------------
 

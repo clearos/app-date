@@ -222,16 +222,14 @@ class NTP_Time extends Engine
         clearos_profile(__METHOD__, __LINE__);
 
         $cron = new Cron();
+        $exists = $cron->exists_configlet(self::FILE_CROND);
 
-        if ($cron->exists_configlet(self::FILE_CROND))
+        if (!$state && $exists) {
             $cron->delete_configlet(self::FILE_CROND);
-
-        if (!$state)
-            return;
-
-        $payload = self::DEFAULT_CRONTAB_TIME . ' root ' . self::COMMAND_CRON;
-
-        $cron->add_configlet(self::FILE_CROND, $payload);
+        } else if ($state && !$exists) {
+            $payload = self::DEFAULT_CRONTAB_TIME . ' root ' . self::COMMAND_CRON;
+            $cron->add_configlet(self::FILE_CROND, $payload);
+        }
     }
 
     /**

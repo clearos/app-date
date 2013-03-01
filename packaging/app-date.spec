@@ -1,7 +1,7 @@
 
 Name: app-date
 Epoch: 1
-Version: 1.4.14
+Version: 1.4.20
 Release: 1%{dist}
 Summary: Date and Time
 License: GPLv3
@@ -36,7 +36,6 @@ This package provides the core API and libraries.
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/date
 cp -r * %{buildroot}/usr/clearos/apps/date/
 
-install -D -m 0644 packaging/app-date.cron %{buildroot}/etc/cron.d/app-date
 install -D -m 0644 packaging/date.conf %{buildroot}/etc/clearos/date.conf
 install -D -m 0644 packaging/filewatch-date-network.conf %{buildroot}/etc/clearsync.d/filewatch-date-network.conf
 install -D -m 0755 packaging/timesync %{buildroot}/usr/sbin/timesync
@@ -82,7 +81,6 @@ exit 0
 /usr/clearos/apps/date/deploy
 /usr/clearos/apps/date/language
 /usr/clearos/apps/date/libraries
-/etc/cron.d/app-date
 %config(noreplace) /etc/clearos/date.conf
 /etc/clearsync.d/filewatch-date-network.conf
 /usr/sbin/timesync

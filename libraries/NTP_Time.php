@@ -303,8 +303,13 @@ class NTP_Time extends Engine
     {
         clearos_profile(__METHOD__, __LINE__);
 
+        // Hardware clock synchronization is not always supported, so avoid 
+        // a nasty backtrace on an semi-expected outcome.
+
+        $options['validate_exit_code'] = FALSE;
+
         $shell = new Shell();
-        $shell->execute(self::COMMAND_HWCLOCK, '--directisa --systohc', TRUE);
+        $shell->execute(self::COMMAND_HWCLOCK, '--directisa --systohc', TRUE, $options);
     }
 
     ///////////////////////////////////////////////////////////////////////////////

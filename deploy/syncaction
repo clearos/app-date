@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/sbin/ntpdate -s -u time.clearsdn.com

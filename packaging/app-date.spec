@@ -19,7 +19,7 @@ Summary: Date and Time - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
-Requires: app-network-core
+Requires: app-network-core >= 1:1.4.70
 Requires: app-tasks-core
 Requires: ntpdate >= 4.2.4p8
 
@@ -37,7 +37,7 @@ mkdir -p -m 755 %{buildroot}/usr/clearos/apps/date
 cp -r * %{buildroot}/usr/clearos/apps/date/
 
 install -D -m 0644 packaging/date.conf %{buildroot}/etc/clearos/date.conf
-install -D -m 0644 packaging/filewatch-date-network.conf %{buildroot}/etc/clearsync.d/filewatch-date-network.conf
+install -D -m 0755 packaging/network-connected-event %{buildroot}/var/clearos/events/network_connected/date
 install -D -m 0755 packaging/timesync %{buildroot}/usr/sbin/timesync
 
 %post
@@ -82,5 +82,5 @@ exit 0
 /usr/clearos/apps/date/language
 /usr/clearos/apps/date/libraries
 %config(noreplace) /etc/clearos/date.conf
-/etc/clearsync.d/filewatch-date-network.conf
+/var/clearos/events/network_connected/date
 /usr/sbin/timesync

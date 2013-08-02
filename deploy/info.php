@@ -34,13 +34,12 @@ $app['controllers']['date']['inline_help'] = array(
 /////////////////////////////////////////////////////////////////////////////
 
 $app['core_requires'] = array(
-    'app-network-core', 
+    'app-network-core >= 1:1.4.70', 
     'app-tasks-core', 
     'ntpdate >= 4.2.4p8'
 );
 
 $app['core_file_manifest'] = array( 
-    'filewatch-date-network.conf'=> array('target' => '/etc/clearsync.d/filewatch-date-network.conf'),
     'date.conf' => array(
         'target' => '/etc/clearos/date.conf',
         'config' => TRUE,
@@ -49,5 +48,9 @@ $app['core_file_manifest'] = array(
     'timesync' => array(
         'target' => '/usr/sbin/timesync',
         'mode' => '0755',
+    ),
+    'network-connected-event'=> array(
+        'target' => '/var/clearos/events/network_connected/date',
+        'mode' => '0755'
     ),
 );

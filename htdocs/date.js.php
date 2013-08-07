@@ -89,6 +89,7 @@ function showData(payload) {
         // $("#result").html(payload.error_message);
     } else {
         $("#status_synchronize").html(lang_synchronized);
+        location.reload();
     }
 }
 

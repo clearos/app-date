@@ -279,15 +279,23 @@ class NTP_Time extends Engine
 
         Validation_Exception::is_valid($this->validate_time_server($time_server));
 
+        $resolvable = dns_get_record($time_server);
+        if (!$resolvable)
+            return 0;
+
         $options['env'] = 'LANG=en_US';
 
         $shell = new Shell();
 
-        $shell->execute(self::COMMAND_NTPDATE, "-u $time_server", TRUE, $options);
+        $retval = $shell->execute(self::COMMAND_NTPDATE, "-u $time_server", TRUE, $options);
 
-        $output = $shell->get_first_output_line();
-        $output = preg_replace('/.*offset/', '', $output);
-        $output = preg_replace('/\s*sec/', '', $output);
+        if ($retval === 0) {
+            $output = $shell->get_first_output_line();
+            $output = preg_replace('/.*offset/', '', $output);
+            $output = preg_replace('/\s*sec/', '', $output);
+        } else {
+            $output = 0;
+        }
 
         return trim($output);
     }

@@ -76,7 +76,6 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/date/packaging
-%exclude /usr/clearos/apps/date/tests
 %dir /usr/clearos/apps/date
 /usr/clearos/apps/date/deploy
 /usr/clearos/apps/date/language

@@ -19,8 +19,3 @@ if [ ! -e /etc/cron.d/app-date ]; then
     logger -p local6.notice -t installer "app-date-core - adding synchronization task"
     cp /usr/clearos/apps/date/deploy/app-date.cron /etc/cron.d/app-date
 fi
-
-# Reload clearsyncd
-#------------------
-
-/sbin/service clearsyncd condrestart >/dev/null 2>&1

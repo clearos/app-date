@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'date';
-$app['version'] = '1.6.0';
+$app['version'] = '1.6.2';
 $app['release'] = '1';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
@@ -34,12 +34,19 @@ $app['controllers']['date']['inline_help'] = array(
 /////////////////////////////////////////////////////////////////////////////
 
 $app['core_requires'] = array(
+    'app-events-core',
     'app-network-core >= 1:1.4.70', 
     'app-tasks-core', 
+    'csplugin-filewatch',
     'ntpdate >= 4.2.4p8'
 );
 
+$app['core_directory_manifest'] = array(
+    '/var/clearos/events/date' => array(),
+);
+
 $app['core_file_manifest'] = array( 
+    'filewatch-date-event.conf' => array('target' => '/etc/clearsync.d/filewatch-date-event.conf'),
     'date.conf' => array(
         'target' => '/etc/clearos/date.conf',
         'config' => TRUE,

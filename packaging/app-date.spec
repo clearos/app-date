@@ -1,7 +1,7 @@
 
 Name: app-date
 Epoch: 1
-Version: 1.6.0
+Version: 1.6.2
 Release: 1%{dist}
 Summary: Date and Time
 License: GPLv3
@@ -19,8 +19,10 @@ Summary: Date and Time - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
+Requires: app-events-core
 Requires: app-network-core >= 1:1.4.70
 Requires: app-tasks-core
+Requires: csplugin-filewatch
 Requires: ntpdate >= 4.2.4p8
 
 %description core
@@ -36,7 +38,9 @@ This package provides the core API and libraries.
 mkdir -p -m 755 %{buildroot}/usr/clearos/apps/date
 cp -r * %{buildroot}/usr/clearos/apps/date/
 
+install -d -m 0755 %{buildroot}/var/clearos/events/date
 install -D -m 0644 packaging/date.conf %{buildroot}/etc/clearos/date.conf
+install -D -m 0644 packaging/filewatch-date-event.conf %{buildroot}/etc/clearsync.d/filewatch-date-event.conf
 install -D -m 0755 packaging/network-connected-event %{buildroot}/var/clearos/events/network_connected/date
 install -D -m 0755 packaging/timesync %{buildroot}/usr/sbin/timesync
 
@@ -77,9 +81,11 @@ exit 0
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/date/packaging
 %dir /usr/clearos/apps/date
+%dir /var/clearos/events/date
 /usr/clearos/apps/date/deploy
 /usr/clearos/apps/date/language
 /usr/clearos/apps/date/libraries
 %config(noreplace) /etc/clearos/date.conf
+/etc/clearsync.d/filewatch-date-event.conf
 /var/clearos/events/network_connected/date
 /usr/sbin/timesync

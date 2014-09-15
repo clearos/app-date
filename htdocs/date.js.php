@@ -41,6 +41,7 @@ require_once $bootstrap . '/bootstrap.php';
 ///////////////////////////////////////////////////////////////////////////////
 
 clearos_load_language('date');
+clearos_load_language('base');
 
 ///////////////////////////////////////////////////////////////////////////////
 // J A V A S C R I P T
@@ -55,7 +56,9 @@ $(document).ready(function() {
     //-------------
 
     lang_synchronizing = '<?php echo lang("date_synchronizing"); ?>';
+    lang_synchronization_success = '<?php echo lang("date_synchronization_success"); ?>';
     lang_synchronized = '<?php echo lang("date_synchronized"); ?>';
+    lang_status = '<?php echo lang("base_status"); ?>';
 
     // Wizard next button handling
     //----------------------------
@@ -68,8 +71,9 @@ $(document).ready(function() {
     //-----
 
 	$("#sync").click(function(){
-		$("#status_synchronize").html('<div class="theme-form-header-working">' + lang_synchronizing + '</div>');
-
+        var options = new Object();
+        options.text = lang_synchronizing;
+        $('#auto_synchronize_text').html(clearos_loading(options));
 		$.ajax({
 			url: '/app/date/sync',
 			method: 'GET',
@@ -86,10 +90,15 @@ $(document).ready(function() {
 
 function showData(payload) {
     if (payload.error_message) {
-        // $("#result").html(payload.error_message);
+        var options = new Object();
+        options.type = 'warning';
+		clearos_dialog_box('sync_stat', lang_status, payload.error_message, options);
     } else {
-        $("#status_synchronize").html(lang_synchronized);
-        location.reload();
+        var options = new Object();
+        options.type = 'success';
+        options.reload_on_close = true;
+		clearos_dialog_box('sync_stat', lang_status, lang_synchronization_success, options);
+        $('#auto_synchronize_text').html('');
     }
 }
 

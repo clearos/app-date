@@ -128,11 +128,10 @@ class Date extends ClearOS_Controller
         //---------------
 
         try {
-            // Tweak form type if this is loaded in the install wizard
             if (isset($this->session->userdata['wizard']))
-                $data['form_type'] = 'wizard';
-            else
-                $data['form_type'] = $form_type;
+                $data['is_wizard'] = TRUE;
+
+            $data['form_type'] = $form_type;
 
             $data['time_zone'] = $this->time->get_time_zone();
             $data['time_zones'] = $this->time->get_time_zone_list();

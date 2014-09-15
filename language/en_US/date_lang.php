@@ -6,6 +6,7 @@ $lang['date_app_tooltip'] = 'VoIP, authentication services and other application
 $lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'Date';
 $lang['date_synchronize'] = 'Synchronize';
+$lang['date_synchronization_success'] = 'Synchronization successful!';
 $lang['date_synchronize_help'] = 'Click on the synchronize button to update the system clock with the correct time.  Your system will automatically synchronize its clock from time to time.';
 $lang['date_synchronize_now'] = 'Synchronize Now';
 $lang['date_synchronized'] = 'Synchronized';

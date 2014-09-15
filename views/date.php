@@ -40,12 +40,7 @@ $this->lang->load('date');
 // Form handler
 ///////////////////////////////////////////////////////////////////////////////
 
-if ($form_type === 'wizard') {
-    $read_only = FALSE;
-    $buttons = array( 
-        anchor_javascript('sync', lang('date_synchronize_now'), 'high')
-    );
-} else if ($form_type === 'edit') {
+if ($form_type === 'edit') {
     $read_only = FALSE;
     $buttons = array( 
         form_submit_update('submit-form'),
@@ -55,7 +50,7 @@ if ($form_type === 'wizard') {
     $read_only = TRUE;
     $buttons = array( 
         anchor_edit('/app/date/edit'),
-        anchor_javascript('sync', lang('date_synchronize_now'), 'high')
+        anchor_javascript('sync', lang('date_synchronize_now'), 'low')
     );
 }
 

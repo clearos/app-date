@@ -60,13 +60,6 @@ $(document).ready(function() {
     lang_synchronized = '<?php echo lang("date_synchronized"); ?>';
     lang_status = '<?php echo lang("base_status"); ?>';
 
-    // Wizard next button handling
-    //----------------------------
-
-    $("#wizard_nav_next").click(function(){
-        $('form#date_form').submit();
-    });
-
     // Main
     //-----
 

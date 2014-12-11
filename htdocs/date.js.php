@@ -56,7 +56,7 @@ $(document).ready(function() {
     //-------------
 
     lang_synchronizing = '<?php echo lang("date_synchronizing"); ?>';
-    lang_synchronization_success = '<?php echo lang("date_synchronization_success"); ?>';
+    lang_synchronization_success = '<?php echo lang("date_synchronized"); ?>';
     lang_synchronized = '<?php echo lang("date_synchronized"); ?>';
     lang_status = '<?php echo lang("base_status"); ?>';
 

@@ -114,10 +114,10 @@ class Date extends ClearOS_Controller
 
                 $this->page->set_status_updated();
 
-                if ($this->session->userdata['wizard_redirect'])
-                    redirect($this->session->userdata['wizard_redirect']);
-                else
+                if (empty($this->session->userdata['wizard_redirect']))
                     redirect('/date');
+                else
+                    redirect($this->session->userdata['wizard_redirect']);
             } catch (Exception $e) {
                 $this->page->view_exception($e);
                 return;

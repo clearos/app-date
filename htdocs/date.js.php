@@ -7,7 +7,7 @@
  * @package    date
  * @subpackage javascript
  * @author     ClearFoundation <developer@clearfoundation.com>
- * @copyright  2011 ClearFoundation
+ * @copyright  2011-2015 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
  * @link       http://www.clearfoundation.com/docs/developer/apps/date/
  */
@@ -56,7 +56,6 @@ $(document).ready(function() {
     //-------------
 
     lang_synchronizing = '<?php echo lang("date_synchronizing"); ?>';
-    lang_synchronization_success = '<?php echo lang("date_synchronized"); ?>';
     lang_synchronized = '<?php echo lang("date_synchronized"); ?>';
     lang_status = '<?php echo lang("base_status"); ?>';
 
@@ -66,7 +65,8 @@ $(document).ready(function() {
 	$("#sync").click(function(){
         var options = new Object();
         options.text = lang_synchronizing;
-        $('#auto_synchronize_text').html(clearos_loading(options));
+        $('#sync_status_text').html(clearos_loading(options));
+        $('#sync_status_field').removeClass('theme-hidden');
 		$.ajax({
 			url: '/app/date/sync',
 			method: 'GET',
@@ -83,15 +83,9 @@ $(document).ready(function() {
 
 function showData(payload) {
     if (payload.error_message) {
-        var options = new Object();
-        options.type = 'warning';
-		clearos_dialog_box('sync_stat', lang_status, payload.error_message, options);
+        $('#sync_status_text').html(payload.error_message);
     } else {
-        var options = new Object();
-        options.type = 'success';
-        options.reload_on_close = true;
-		clearos_dialog_box('sync_stat', lang_status, lang_synchronization_success, options);
-        $('#auto_synchronize_text').html('');
+        $('#sync_status_text').html(lang_synchronized);
     }
 }
 

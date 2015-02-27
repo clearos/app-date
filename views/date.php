@@ -66,6 +66,9 @@ echo field_input('time', $time, lang('date_time'), TRUE);
 echo field_dropdown('time_zone', $time_zones, $time_zone, lang('date_time_zone'), $read_only);
 echo field_toggle_enable_disable('auto_synchronize', $auto_synchronize, lang('date_automatic_synchronize'), $read_only);
 
+if ($form_type != 'edit')
+    echo field_view(lang('base_status'), '', 'sync_status', '', array('hide_field' => TRUE));
+
 echo field_button_set($buttons);
 
 echo form_footer();

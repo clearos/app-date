@@ -26,7 +26,7 @@ $app['subcategory'] = lang('base_subcategory_settings');
 $app['controllers']['date']['wizard_name'] = lang('date_app_name');
 $app['controllers']['date']['wizard_description'] = lang('date_time_zone_wizard_help');
 $app['controllers']['date']['inline_help'] = array(
-    lang('date_synchronize') => lang('date_synchronize_help'),
+    lang('date_synchronize') => lang('date_synchronize_wizard_tip'),
 );
 
 /////////////////////////////////////////////////////////////////////////////

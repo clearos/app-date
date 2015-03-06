@@ -40,7 +40,12 @@ $this->lang->load('date');
 // Form handler
 ///////////////////////////////////////////////////////////////////////////////
 
-if ($form_type === 'edit') {
+if ($is_wizard) {
+    $read_only = FALSE;
+    $buttons = array(
+        form_submit_update('submit-form'),
+    );
+} else if ($form_type === 'edit') {
     $read_only = FALSE;
     $buttons = array( 
         form_submit_update('submit-form'),

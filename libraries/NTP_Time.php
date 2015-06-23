@@ -227,7 +227,7 @@ class NTP_Time extends Engine
         if (!$state && $exists) {
             $cron->delete_configlet(self::FILE_CROND);
         } else if ($state && !$exists) {
-            $payload = self::DEFAULT_CRONTAB_TIME . ' root ' . self::COMMAND_CRON;
+            $payload = self::DEFAULT_CRONTAB_TIME . ' root ' . self::COMMAND_CRON . ' 2>/dev/null';
             $cron->add_configlet(self::FILE_CROND, $payload);
         }
     }

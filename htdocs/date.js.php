@@ -62,7 +62,8 @@ $(document).ready(function() {
     // Main
     //-----
 
-	$("#sync").click(function(){
+	$("#sync").click(function(e){
+        e.preventDefault();
         var options = new Object();
         options.text = lang_synchronizing;
         $('#sync_status_text').html(clearos_loading(options));

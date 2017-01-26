@@ -5,11 +5,9 @@
 $lang['date_app_description'] = 'Ferramenta de Fuso Horário e Sincronização do relógio.';
 $lang['date_app_name'] = 'Data e Hora';
 $lang['date_app_tooltip'] = 'VoIP, serviço de autenticação e outras aplicações exigem configurações de tempo adequados, por isso, verifique se o seu relógio e o fuso horário estão corretos!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
 $lang['date_date'] = 'Data';
 $lang['date_synchronize'] = 'Sincronizar';
 $lang['date_synchronize_now'] = 'Sincronizar Agora';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
 $lang['date_synchronized'] = 'Sincronizado';
 $lang['date_synchronizing'] = 'Sincronizando';
 $lang['date_time'] = 'Hora';

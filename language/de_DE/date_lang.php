@@ -9,7 +9,6 @@ $lang['date_automatic_synchronize'] = 'Automatisch Synchronisieren';
 $lang['date_date'] = 'Datum';
 $lang['date_synchronize'] = 'Synchronisieren';
 $lang['date_synchronize_now'] = 'Jetzt Synchronisieren';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
 $lang['date_synchronized'] = 'Synchronisiert';
 $lang['date_synchronizing'] = 'Wird Synchronisiert';
 $lang['date_time'] = 'Zeit';

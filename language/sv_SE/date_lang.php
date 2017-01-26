@@ -9,7 +9,6 @@ $lang['date_automatic_synchronize'] = 'Automatisk synkronisering';
 $lang['date_date'] = 'Datum';
 $lang['date_synchronize'] = 'Synkronisera';
 $lang['date_synchronize_now'] = 'Synkronisera nu';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
 $lang['date_synchronized'] = 'Synkroniserad';
 $lang['date_synchronizing'] = 'Synkroniserar';
 $lang['date_time'] = 'Klockslag';

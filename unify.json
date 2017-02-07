@@ -1,0 +1,22 @@
+{
+	"contact": "Peter Baldwin",
+	"email": "johns@inwhatlanguage.com",
+	"targets": ["ab","aa","af","ak","sq","am","ar","an","as","hy","av","ae","ay","az","ba","bm","eu","be","bn","bh","bi","bs","br","bg","my","ca","ch","ce","ny","zh","cv","kw","co","cr","hr","cs","da","dv","dz","en","eo","et","ee","fo","fj","fi","fr","ff","gl","de","el","gn","gu","ht","ha","he","hz","hi","ho","hu","ia","id","ie","ga","ig","ii","ik","io","is","it","iu","ja","jv","ka","kg","ki","kj","kk","kl","km","kn","ko","kr","ks","ku","kv","ky","la","lb","lg","li","ln","lo","lt","lu","lv","mg","mh","gv","mi","mk","ml","mn","mr","ms","mt","na","nb","nd","ne","ng","nl","nn","no","nr","nv","oc","oj","cu","om","or","os","pa","pi","fa","pl","ps","pt","qu","rm","rn","ro","ru","rw","sa","sc","sd","se","sm","sg","sr","gd","sn","si","sk","sl","so","st","es","su","sw","ss","sv","ta","te","tg","th","ti","bo","tk","tl","tn","to","tr","ts","tt","tw","ty","ug","uk","ur","uz","ve","vi","vo","wa","cy","wo","fy","xh","yi","yo","za","zu"],
+	"updDays": 0,
+	"updHour": 0,
+	"file_filters": [".php"],
+	"output_mask": {
+		"directory": "%dirname%-%langcode%",
+		"file": "%filename%-%langcode%.%fileext%"
+	},
+	"paths": [
+		{ "path":"/language/en_US/",
+		  "output_mask": {
+			"directory": "%langcode%",
+			"file": ""
+		   },
+		  "file_filters": ["date_lang.php"],
+		  "output_path": "/language/"
+		}
+	]
+}

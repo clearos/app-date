@@ -80,6 +80,7 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/date/packaging
+%exclude /usr/clearos/apps/date/unify.json
 %dir /usr/clearos/apps/date
 %dir /var/clearos/events/date
 /usr/clearos/apps/date/deploy

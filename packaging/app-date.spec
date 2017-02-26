@@ -3,7 +3,7 @@ Name: app-date
 Epoch: 1
 Version: 2.3.20
 Release: 1%{dist}
-Summary: Date and Time
+Summary: Date
 License: GPLv3
 Group: ClearOS/Apps
 Source: %{name}-%{version}.tar.gz
@@ -12,10 +12,10 @@ Requires: %{name}-core = 1:%{version}-%{release}
 Requires: app-base
 
 %description
-The time zone and clock synchronization tool.
+Outil de synchronisation de l'horloge et du fuseau horaire.
 
 %package core
-Summary: Date and Time - Core
+Summary: Date - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
@@ -26,7 +26,7 @@ Requires: csplugin-filewatch
 Requires: ntpdate >= 4.2.4p8
 
 %description core
-The time zone and clock synchronization tool.
+Outil de synchronisation de l'horloge et du fuseau horaire.
 
 This package provides the core API and libraries.
 

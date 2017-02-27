@@ -1,6 +1,6 @@
 <?php
 
-$lang['date_app_description'] = 'Il fuso orario e strumento di sincronizzazione dell'orologio.';
+$lang['date_app_description'] = 'Il fuso orario e strumento di sincronizzazione dell\'orologio.';
 $lang['date_app_name'] = 'Data e ora';
 $lang['date_app_tooltip'] = 'VoIP, servizi di autenticazione e altre applicazioni richiedono impostazioni momento giusto, in modo da assicurarsi il vostro orologio e il fuso orario siano corretti!';
 $lang['date_automatic_synchronize'] = 'Sincronizza automatica';

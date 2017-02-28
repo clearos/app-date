@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'タイムゾーンとクロック同期ツール。';
-$lang['date_app_name'] = '日時';
-$lang['date_app_tooltip'] = 'VoIPの、認証サービスやその他のアプリケーションの適切な時間設定を必要とするので、あなたの時計とタイムゾーンが正しいことを確認してください！';
-$lang['date_automatic_synchronize'] = '自動同期';
-$lang['date_date'] = '日付';
-$lang['date_synchronize'] = '同期します';
-$lang['date_synchronize_now'] = '今すぐ同期';
-$lang['date_synchronize_wizard_tip'] = '自動同期を有効にすると、システムは、時間から時間にクロックを同期させます。';
-$lang['date_synchronized'] = '同期されました';
-$lang['date_synchronizing'] = '同期化';
-$lang['date_time'] = '時間';
-$lang['date_time_server'] = 'タイムサーバ';
-$lang['date_time_server_is_invalid'] = 'タイムサーバーが無効です。';
-$lang['date_time_synchronization_schedule_is_invalid'] = '時刻同期スケジュールが無効です。';
-$lang['date_time_zone'] = 'タイムゾーン';
-$lang['date_time_zone_is_invalid'] = 'タイムゾーンは無効です。';
-$lang['date_time_zone_wizard_help'] = '多くのアプリケーションおよびサービスは、正しいタイムゾーン情報と正確なクロックを必要とするので、それが正しく設定されていることが重要です。';
+$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
+$lang['date_app_name'] = 'Date and Time';
+$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
+$lang['date_date'] = 'Date';
+$lang['date_synchronize'] = 'Synchronize';
+$lang['date_synchronize_now'] = 'Synchronize Now';
+$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
+$lang['date_synchronized'] = 'Synchronized';
+$lang['date_synchronizing'] = 'Synchronizing';
+$lang['date_time'] = 'Time';
+$lang['date_time_server'] = 'Time Server';
+$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
+$lang['date_time_zone'] = 'Time Zone';
+$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
+$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';

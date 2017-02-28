@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'Te rohe wā, me te karaka tukutahitanga taputapu.';
-$lang['date_app_name'] = 'Rā me te Wā';
-$lang['date_app_tooltip'] = 'VoIP, ratonga motuhēhēnga me ētahi atu taupānga rapu tautuhinga wa e tika, kia pai kia koutou karaka me te rohe wā e tika!';
-$lang['date_automatic_synchronize'] = 'Tukutahi Aunoa';
-$lang['date_date'] = 'rā';
-$lang['date_synchronize'] = 'tukutahi';
-$lang['date_synchronize_now'] = 'tukutahi Na';
-$lang['date_synchronize_wizard_tip'] = 'Ki te tukutahi aunoa whakahohea, ka tukutahi i te pūnaha tona karaka i te wa wa ki.';
-$lang['date_synchronized'] = 'tukutahi';
-$lang['date_synchronizing'] = 'tukutahi';
-$lang['date_time'] = 'wā';
-$lang['date_time_server'] = 'Tūmau wā';
-$lang['date_time_server_is_invalid'] = 'He muhu Time tūmau.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'He muhu hōtaka tukutahitanga Time.';
-$lang['date_time_zone'] = 'Rohe wā';
-$lang['date_time_zone_is_invalid'] = 'He muhu rohe Time.';
-$lang['date_time_zone_wizard_help'] = 'He maha taupānga me ngā ratonga rapu tika mōhiohio rohe wā me te karaka tika, na he mea nui e te whakaturia te reira tika.';
+$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
+$lang['date_app_name'] = 'Date and Time';
+$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
+$lang['date_date'] = 'Date';
+$lang['date_synchronize'] = 'Synchronize';
+$lang['date_synchronize_now'] = 'Synchronize Now';
+$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
+$lang['date_synchronized'] = 'Synchronized';
+$lang['date_synchronizing'] = 'Synchronizing';
+$lang['date_time'] = 'Time';
+$lang['date_time_server'] = 'Time Server';
+$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
+$lang['date_time_zone'] = 'Time Zone';
+$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
+$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';

@@ -1,7 +1,7 @@
 
 Name: app-date
 Epoch: 1
-Version: 2.3.20
+Version: 2.3.21
 Release: 1%{dist}
 Summary: Date and Time
 License: GPLv3

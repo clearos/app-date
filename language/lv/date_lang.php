@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'Laika joslu un pulksteni sinhronizācijas rīks.';
-$lang['date_app_name'] = 'Datums un laiks';
-$lang['date_app_tooltip'] = 'VoIP, autentifikācijas pakalpojumu un citas programmas prasa pareizu laika iestatījumus, tādēļ, lūdzu, pārliecinieties, ka jūsu pulkstenis un laika zona ir pareizi!';
-$lang['date_automatic_synchronize'] = 'Automātiskā sinhronizēšana';
-$lang['date_date'] = 'Datums';
-$lang['date_synchronize'] = 'sinhronizēt';
-$lang['date_synchronize_now'] = 'sinhronizēt tagad';
-$lang['date_synchronize_wizard_tip'] = 'Ar automātisko sinhronizēt aktivizēta, sistēma sinhronizēt savu pulksteni no laika uz laiku.';
-$lang['date_synchronized'] = 'Sinhronā';
-$lang['date_synchronizing'] = 'Sinhronizēšana';
-$lang['date_time'] = 'Laiks';
-$lang['date_time_server'] = 'izdabātājs';
-$lang['date_time_server_is_invalid'] = 'Laiks serveris ir nederīgs.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Laika sinhronizācija grafiks ir nederīgs.';
-$lang['date_time_zone'] = 'Laika zona';
-$lang['date_time_zone_is_invalid'] = 'Laika zona ir nederīgs.';
-$lang['date_time_zone_wizard_help'] = 'Daudz progr un pakalpojumiem prasa pareizu laika joslu informāciju un precīzu pulksteni, tāpēc ir svarīgi, ka tā ir iestatīts pareizi.';
+$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
+$lang['date_app_name'] = 'Date and Time';
+$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
+$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
+$lang['date_date'] = 'Date';
+$lang['date_synchronize'] = 'Synchronize';
+$lang['date_synchronize_now'] = 'Synchronize Now';
+$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
+$lang['date_synchronized'] = 'Synchronized';
+$lang['date_synchronizing'] = 'Synchronizing';
+$lang['date_time'] = 'Time';
+$lang['date_time_server'] = 'Time Server';
+$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
+$lang['date_time_zone'] = 'Time Zone';
+$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
+$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';

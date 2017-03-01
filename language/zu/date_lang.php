@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'Umkhawuko wesikhathi futhi ithuluzi clock ukuvumelanisa.';
+$lang['date_app_name'] = 'Usuku nesikhathi';
+$lang['date_app_tooltip'] = 'VoIP, amasevisi ukuqinisekiswa kanye nezinye zidinga izilungiselelo efanele ngesikhathi, ngakho ke sicela uqiniseke iwashi lakho kanye nesikhathi zone zilungile!';
+$lang['date_automatic_synchronize'] = 'Automatic Vumelanisa';
+$lang['date_date'] = 'Usuku';
+$lang['date_synchronize'] = 'Vumelanisa';
+$lang['date_synchronize_now'] = 'Vumelanisa Manje';
+$lang['date_synchronize_wizard_tip'] = 'With vumelanisa othomathikhi inikwe amandla, ohlelweni ukuvumelanisa iwashi layo ngezikhathi ezithile.';
+$lang['date_synchronized'] = 'Kuxhunyaniswé';
+$lang['date_synchronizing'] = 'Kuyavumelaniswa';
+$lang['date_time'] = 'Isikhathi';
+$lang['date_time_server'] = 'Isikhathi Server';
+$lang['date_time_server_is_invalid'] = 'iseva Isikhathi ayivumelekile.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Isikhathi ukuvumelanisa isimiso ayivumelekile.';
+$lang['date_time_zone'] = 'Isikhathi Zone';
+$lang['date_time_zone_is_invalid'] = 'Isikhathi zone ayivumelekile.';
+$lang['date_time_zone_wizard_help'] = 'Iningi lezinhlelo zokusebenza kanye namasevisi adinga letifanele time zone kanye newashi olunembile, ngakho kubalulekile ukuthi isethwe ngendlela efanele.';

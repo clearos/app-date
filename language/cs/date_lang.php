@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
+$lang['date_app_description'] = 'Časové pásmo a synchronizace času nástroj.';
+$lang['date_app_name'] = 'Datum a čas';
+$lang['date_app_tooltip'] = 'VoIP, služby ověřování a další aplikace vyžadují správné nastavení času, takže ujistěte se, že vaše hodiny a časové pásmo jsou správné!';
+$lang['date_automatic_synchronize'] = 'Automatická synchronizace';
+$lang['date_date'] = 'datum';
+$lang['date_synchronize'] = 'Synchronizovat';
+$lang['date_synchronize_now'] = 'synchronizace teď';
+$lang['date_synchronize_wizard_tip'] = 'Při zapnuté automatické synchronizace, systém bude synchronizovat své hodiny z času na čas.';
+$lang['date_synchronized'] = 'synchronizované';
+$lang['date_synchronizing'] = 'Synchronizace';
+$lang['date_time'] = 'Čas';
 $lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_time_server_is_invalid'] = 'Čas serveru je neplatný.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Synchronizace časový harmonogram je neplatný.';
+$lang['date_time_zone'] = 'Časové pásmo';
+$lang['date_time_zone_is_invalid'] = 'Časové pásmo je neplatný.';
+$lang['date_time_zone_wizard_help'] = 'Mnoho aplikací a služeb vyžadují správné informace o časovém pásmu a přesný čas, takže je důležité, že je správně nastaven.';

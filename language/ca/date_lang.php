@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'La zona horària i l&#39;eina de sincronització de rellotge.';
+$lang['date_app_name'] = 'Data i hora';
+$lang['date_app_tooltip'] = 'VoIP, serveis d&#39;autenticació i altres aplicacions requereixen ajustos de temps apropiats, així que si us plau assegureu-vos que el rellotge i el fus horari són correctes!';
+$lang['date_automatic_synchronize'] = 'sincronitzar automàtica';
+$lang['date_date'] = 'Data';
+$lang['date_synchronize'] = 'sincronitzar';
+$lang['date_synchronize_now'] = 'sincronitzar Ara';
+$lang['date_synchronize_wizard_tip'] = 'Amb sincronització automàtica activada, el sistema sincronitzar el seu rellotge de tant en tant.';
+$lang['date_synchronized'] = 'sincronitzada';
+$lang['date_synchronizing'] = 'sincronització';
+$lang['date_time'] = 'Temps';
+$lang['date_time_server'] = 'El servidor d&#39;hora';
+$lang['date_time_server_is_invalid'] = 'servidor de temps no és vàlid.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'programa de sincronització de temps no és vàlid.';
+$lang['date_time_zone'] = 'Zona horària';
+$lang['date_time_zone_is_invalid'] = 'zona horària no és vàlid.';
+$lang['date_time_zone_wizard_help'] = 'Moltes aplicacions i serveis requereixen informació de zona horària correcta i un rellotge de precisió, pel que és important que s&#39;estableix correctament.';

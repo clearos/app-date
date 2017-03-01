@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'वेळ क्षेत्र आणि घड्याळ समक्रमण साधन.';
+$lang['date_app_name'] = 'तारीख आणि वेळ';
+$lang['date_app_tooltip'] = 'जो VoIP, प्रमाणीकरण सेवा आणि इतर अनुप्रयोग, योग्य वेळ सेटिंग आवश्यक आहे म्हणून कृपया घड्याळ आणि टाइम झोन योग्य आहेत याची खात्री करा!';
+$lang['date_automatic_synchronize'] = 'स्वयंचलित समजुळणी';
+$lang['date_date'] = 'तारीख';
+$lang['date_synchronize'] = 'समक्रमित करा';
+$lang['date_synchronize_now'] = 'आता समक्रमित करा';
+$lang['date_synchronize_wizard_tip'] = 'स्वयंचलित समजुळणी सक्षम करून, प्रणाली वेळोवेळी त्याचे घड्याळ समक्रमित करेल.';
+$lang['date_synchronized'] = 'समक्रमित';
+$lang['date_synchronizing'] = 'समक्रमण';
+$lang['date_time'] = 'वेळ';
+$lang['date_time_server'] = 'वेळ सर्व्हर';
+$lang['date_time_server_is_invalid'] = 'वेळ सर्व्हर अवैध आहे.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'वेळ समजुळवणी वेळापत्रक अवैध आहे.';
+$lang['date_time_zone'] = 'वेळ क्षेत्र';
+$lang['date_time_zone_is_invalid'] = 'वेळ क्षेत्र अवैध आहे.';
+$lang['date_time_zone_wizard_help'] = 'अनेक अॅप्स आणि सेवा योग्य वेळ क्षेत्र माहिती आणि अचूक घड्याळ आवश्यक आहे, त्यामुळे तो योग्य प्रकारे सेट केले महत्वाचे आहे.';

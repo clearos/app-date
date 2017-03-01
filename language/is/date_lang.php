@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'Tímabelti og klukka samstillingu tól.';
+$lang['date_app_name'] = 'Dagsetning og tími';
+$lang['date_app_tooltip'] = 'VoIP, sannvottun þjónustu og önnur forrit krefjast réttar tíma, svo vinsamlegast vertu viss um að klukkan í og ​​tímabelti eru rétt!';
+$lang['date_automatic_synchronize'] = 'Sjálfvirk Samstilla';
+$lang['date_date'] = 'Dagsetning';
+$lang['date_synchronize'] = 'Samstilling';
+$lang['date_synchronize_now'] = 'Samstilling Nú';
+$lang['date_synchronize_wizard_tip'] = 'Með sjálfvirkri Samstilling virkt, mun kerfið samstilla klukkuna sína frá einum tíma til annars.';
+$lang['date_synchronized'] = 'samstillt';
+$lang['date_synchronizing'] = 'Samstilling';
+$lang['date_time'] = 'tími';
+$lang['date_time_server'] = 'tími Server';
+$lang['date_time_server_is_invalid'] = 'Tími framreiðslumaður er ógilt.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Tímastilling áætlun er ógilt.';
+$lang['date_time_zone'] = 'Tímabelti';
+$lang['date_time_zone_is_invalid'] = 'Tímabelti er ógilt.';
+$lang['date_time_zone_wizard_help'] = 'Margir forrit og þjónustu þurfa réttar tímabelti og nákvæma klukku, þannig að það er mikilvægt að það sé rétt stillt.';

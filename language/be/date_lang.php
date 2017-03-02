@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'Гадзінны пояс і інструмент сінхранізацыі гадзін.';
+$lang['date_app_name'] = 'Дата і час';
+$lang['date_app_tooltip'] = 'VoIP, паслугі аўтэнтыфікацыі і іншыя прыкладання патрабуюць наладзіць тэлефон часу, таму пераканайцеся, што вашыя гадзіны і гадзінны пояс правільна!';
+$lang['date_automatic_synchronize'] = 'аўтаматычная сінхранізацыя';
+$lang['date_date'] = 'дата';
+$lang['date_synchronize'] = 'сінхранізаваць';
+$lang['date_synchronize_now'] = 'сінхранізаваць зараз';
+$lang['date_synchronize_wizard_tip'] = 'З уключанай функцыяй аўтаматычнай сінхранізацыі, то сістэма будзе сінхранізаваць свой гадзіннік, час ад часу.';
+$lang['date_synchronized'] = 'сінхранізаваны';
+$lang['date_synchronizing'] = 'сінхранізуецца';
+$lang['date_time'] = 'час';
+$lang['date_time_server'] = 'час сервера';
+$lang['date_time_server_is_invalid'] = 'Сервер часу з&#39;яўляецца несапраўдным.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Графік сінхранізацыі часу з&#39;яўляецца несапраўдным.';
+$lang['date_time_zone'] = 'гадзінны пояс';
+$lang['date_time_zone_is_invalid'] = 'Несапраўдны гадзінны пояс.';
+$lang['date_time_zone_wizard_help'] = 'Многія прыкладання і паслугі патрабуюць правільнай інфармацыі аб часавым поясе і дакладныя гадзіны, таму вельмі важна, што ён усталяваны правільна.';

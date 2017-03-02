@@ -1,10 +1,10 @@
 <?php
 
-$lang['date_app_description'] = 'Vaqt mintaqasi va soat sinxronlash vositasi.';
+$lang['date_app_description'] = 'vaqt mintaqasi va soat sinxronlash vositasi.';
 $lang['date_app_name'] = 'Sana va vaqt';
 $lang['date_app_tooltip'] = 'VoIP, autentifikatsiya xizmatlar va boshqa dasturlar shuning uchun soat va vaqt mintaqasi to&#39;g&#39;ri ishonch hosil qiling, to&#39;g&#39;ri vaqt moslamalarini talab!';
-$lang['date_automatic_synchronize'] = 'Avtomatik Sinxronizatsiya';
-$lang['date_date'] = 'Sana';
+$lang['date_automatic_synchronize'] = 'avtomatik Sinxronizatsiya';
+$lang['date_date'] = 'sana';
 $lang['date_synchronize'] = 'sinxronlashtirish';
 $lang['date_synchronize_now'] = 'Endi sinxronlashtirish';
 $lang['date_synchronize_wizard_tip'] = 'avtomatik sinxronlash yoqilgan bilan, tizim vaqti-vaqti bilan o&#39;z soat sinxronlashtirish bo&#39;ladi.';

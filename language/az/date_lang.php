@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
+$lang['date_app_description'] = 'vaxt zonası və saat sinxronizasiya vasitədir.';
+$lang['date_app_name'] = 'Tarix və Saat';
+$lang['date_app_tooltip'] = 'VoIP, identifikasiyası xidmətləri və digər applications sizin saat və vaxt zonası doğru əmin olun, düzgün vaxt parametrlərini tələb edir!';
+$lang['date_automatic_synchronize'] = 'Avtomatik sinxronizasiya';
+$lang['date_date'] = 'Tarix';
+$lang['date_synchronize'] = 'sinxronizasiya';
+$lang['date_synchronize_now'] = 'İndi sinxronizasiya';
+$lang['date_synchronize_wizard_tip'] = 'Avtomatik sinxronizasiya imkan ilə, sistem zaman-zaman öz saat sinxronizasiya edəcək.';
+$lang['date_synchronized'] = 'Sinxron';
+$lang['date_synchronizing'] = 'Sinxronizasiya';
+$lang['date_time'] = 'vaxt';
 $lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
+$lang['date_time_server_is_invalid'] = 'Time server yanlışdır.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization cədvəli yanlışdır.';
 $lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_time_zone_is_invalid'] = 'Time zone yanlışdır.';
+$lang['date_time_zone_wizard_help'] = 'Bir çox apps və xidmətlər düzgün vaxt zonasını məlumat və dəqiq saat tələb, belə ki, düzgün müəyyən edilir ki, vacibdir.';

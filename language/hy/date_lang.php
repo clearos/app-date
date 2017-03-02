@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
+$lang['date_app_description'] = 'Ժամային գոտին եւ ժամացույցը համաժամացման գործիք.';
+$lang['date_app_name'] = 'Ամսաթիվ եւ ժամ';
+$lang['date_app_tooltip'] = 'VoIP, իսկությունը ծառայություններ եւ այլ ծրագրերը պահանջում Ճիշտ ժամանակին պարամետրերը, ուստի խնդրում ենք համոզվեք, որ Ձեր ժամացույցը եւ ժամային գոտին ճիշտ են:';
+$lang['date_automatic_synchronize'] = 'Ավտոմատ Սինքրոնացրեք';
+$lang['date_date'] = 'ամսաթիվ';
+$lang['date_synchronize'] = 'համաժամանակացնել';
+$lang['date_synchronize_now'] = 'Սինքրոնացրեք Now';
+$lang['date_synchronize_wizard_tip'] = 'Ավտոմատ Սինքրոնացրեք հնարավորություն, որ համակարգը կլինի համեմատել իր ժամացույցը ժամանակ առ ժամանակ.';
+$lang['date_synchronized'] = 'սինխրոն';
 $lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
+$lang['date_time'] = 'ժամանակ';
 $lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_time_server_is_invalid'] = 'Ժամանակն սերվերը անվավեր:';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Ժամանակն համաժամացման ժամանակացույցը անվավեր է:';
+$lang['date_time_zone'] = 'Ժամային գոտի';
+$lang['date_time_zone_is_invalid'] = 'Ժամային գոտի է անվավեր:';
+$lang['date_time_zone_wizard_help'] = 'Շատ հավելվածներ ու ծառայություններ պահանջում ճշգրիտ ժամային գոտին, տեղեկություններ եւ ճշգրիտ ժամացույցը, ուստի կարեւոր է, որ այն սահմանվել է ճիշտ:';

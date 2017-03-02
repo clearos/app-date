@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'La tempozonon kaj horloĝo sincronización ilo.';
+$lang['date_app_name'] = 'Dato kaj Tempo';
+$lang['date_app_tooltip'] = 'VoIP, autenticación servoj kaj aliaj aplikoj postulas konvenan tempon agordojn, do bonvolu certigi vian horloĝon kaj horzono estas korekta!';
+$lang['date_automatic_synchronize'] = 'aŭtomata Sinkronigu';
+$lang['date_date'] = 'Dato';
+$lang['date_synchronize'] = 'sinkronigi';
+$lang['date_synchronize_now'] = 'sinkronigi Nun';
+$lang['date_synchronize_wizard_tip'] = 'Kun aŭtomata Sinkronigu ebligita, la sistemo sinkronigi lian horloĝon de tempo al tempo.';
+$lang['date_synchronized'] = 'sinkronigita';
+$lang['date_synchronizing'] = 'sinkronigante';
+$lang['date_time'] = 'tempo';
+$lang['date_time_server'] = 'tempo Servilo';
+$lang['date_time_server_is_invalid'] = 'Tempo servilo estas nevalida.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Tempo sincronización horaro estas nevalida.';
+$lang['date_time_zone'] = 'Horzono';
+$lang['date_time_zone_is_invalid'] = 'Horzono estas nevalida.';
+$lang['date_time_zone_wizard_help'] = 'Multaj apps kaj servoj postulas ĝentilan horzono informojn kaj precizan horloĝon, do ĝi estas grava ke ĝi estas ĝuste difinita.';

@@ -1,6 +1,6 @@
 <?php
 
-$lang['date_app_description'] = 'Mae\'r parth amser ac offeryn synchronization cloc.';
+$lang['date_app_description'] = 'Mae&#39;r parth amser ac offeryn synchronization cloc.';
 $lang['date_app_name'] = 'Dyddiad ac Amser';
 $lang['date_app_tooltip'] = 'VoIP, gwasanaethau dilysu a cheisiadau eraill yn gofyn lleoliadau amser priodol, felly gwnewch yn siŵr eich cloc a parth amser yn gywir!';
 $lang['date_automatic_synchronize'] = 'Awtomatig Cydamseru';

@@ -1,19 +1,19 @@
 <?php
 
-$lang['date_app_description'] = 'The time zone and clock synchronization tool.';
-$lang['date_app_name'] = 'Date and Time';
-$lang['date_app_tooltip'] = 'VoIP, authentication services and other applications require proper time settings, so please make sure your clock and time zone are correct!';
-$lang['date_automatic_synchronize'] = 'Automatic Synchronize';
-$lang['date_date'] = 'Date';
-$lang['date_synchronize'] = 'Synchronize';
-$lang['date_synchronize_now'] = 'Synchronize Now';
-$lang['date_synchronize_wizard_tip'] = 'With automatic synchronize enabled, the system will synchronize its clock from time to time.';
-$lang['date_synchronized'] = 'Synchronized';
-$lang['date_synchronizing'] = 'Synchronizing';
-$lang['date_time'] = 'Time';
-$lang['date_time_server'] = 'Time Server';
-$lang['date_time_server_is_invalid'] = 'Time server is invalid.';
-$lang['date_time_synchronization_schedule_is_invalid'] = 'Time synchronization schedule is invalid.';
-$lang['date_time_zone'] = 'Time Zone';
-$lang['date_time_zone_is_invalid'] = 'Time zone is invalid.';
-$lang['date_time_zone_wizard_help'] = 'Many apps and services require correct time zone information and an accurate clock, so it is important that it is set correctly.';
+$lang['date_app_description'] = 'Die tydsone en klok sinchronisasie hulpmiddel.';
+$lang['date_app_name'] = 'Datum en tyd';
+$lang['date_app_tooltip'] = 'VoIP, verifikasie dienste en ander programme vereis behoorlike tyd instellings, so maak asseblief seker dat jou horlosie en tydsone korrek is!';
+$lang['date_automatic_synchronize'] = 'outomatiese Synchroniseer';
+$lang['date_date'] = 'datum';
+$lang['date_synchronize'] = 'sinchroniseer';
+$lang['date_synchronize_now'] = 'sinchroniseer Nou';
+$lang['date_synchronize_wizard_tip'] = 'Met outomatiese sinchroniseer geaktiveer is, sal die stelsel die klok van tyd tot tyd te sinchroniseer.';
+$lang['date_synchronized'] = 'gesinchroniseer';
+$lang['date_synchronizing'] = 'Synchroniseren';
+$lang['date_time'] = 'tyd';
+$lang['date_time_server'] = 'tyd Server';
+$lang['date_time_server_is_invalid'] = 'Tyd bediener is ongeldig.';
+$lang['date_time_synchronization_schedule_is_invalid'] = 'Tyd sinchronisasie skedule is ongeldig.';
+$lang['date_time_zone'] = 'Tydsone';
+$lang['date_time_zone_is_invalid'] = 'Tydsone is ongeldig.';
+$lang['date_time_zone_wizard_help'] = 'Baie programme en dienste benodig korrekte tydsone inligting en &#39;n akkurate horlosie, daarom is dit belangrik dat dit korrek is ingestel.';

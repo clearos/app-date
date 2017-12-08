@@ -127,6 +127,8 @@ class Date extends ClearOS_Controller
         try {
             if (isset($this->session->userdata['wizard']))
                 $data['is_wizard'] = TRUE;
+            else
+                $data['is_wizard'] = FALSE;
 
             $data['form_type'] = $form_type;
 

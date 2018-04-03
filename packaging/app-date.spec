@@ -5,7 +5,9 @@ Version: 2.3.24
 Release: 1%{dist}
 Summary: Date and Time
 License: GPLv3
-Group: ClearOS/Apps
+Group: Applications/Apps
+Packager: ClearFoundation
+Vendor: ClearFoundation
 Source: %{name}-%{version}.tar.gz
 Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
@@ -17,7 +19,7 @@ The time zone and clock synchronization tool.
 %package core
 Summary: Date and Time - API
 License: LGPLv3
-Group: ClearOS/Libraries
+Group: Applications/API
 Requires: app-base-core
 Requires: app-events-core
 Requires: app-network-core >= 1:1.4.70
